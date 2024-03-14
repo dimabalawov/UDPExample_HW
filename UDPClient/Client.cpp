@@ -120,7 +120,7 @@ int main()
     }
 
     char login[DEFAULT_BUFLEN];
-    cout << "Enter your nickname and personal colour (dima123:yellow): ";
+    cout << "Enter your nickname and personal colour (dima123:14): ";
     cin.getline(login, DEFAULT_BUFLEN);
     send(client_socket, login, strlen(login), 0);
     CreateThread(0, 0, Sender, 0, 0, 0);
